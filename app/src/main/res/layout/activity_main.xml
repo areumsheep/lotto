@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity" android:weightSum="3">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1" app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true" android:foreground="?attr/selectableItemBackground"
+            android:clickable="true" android:id="@+id/randomCard">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:gravity="right|center_vertical">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:layout_weight="1" android:gravity="center">
+                <TextView
+                        android:text="랜덤으로 번호 생성"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView" android:textSize="24sp"/>
+                <TextView
+                        android:text="랜덤으로 로또번호를 생성합니다"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView2"
+                        android:layout_marginTop="8dp"/>
+            </LinearLayout>
+            <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="140dp" app:srcCompat="@drawable/lottery"
+                    android:id="@+id/imageView"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="2dp"
+            android:foreground="?attr/selectableItemBackground" android:clickable="true"
+            android:id="@+id/constellationCard">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:gravity="right|center_vertical">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:layout_weight="1" android:gravity="center">
+                <TextView
+                        android:text="별자리로 번호 생성"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView3" android:textSize="24sp"/>
+                <TextView
+                        android:text="별자리로 로또번호를 생성합니다"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView4"
+                        android:layout_marginTop="8dp"/>
+            </LinearLayout>
+            <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="140dp" app:srcCompat="@drawable/constellation"
+                    android:id="@+id/imageView2" android:paddingTop="16dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="2dp"
+            app:cardUseCompatPadding="true" android:foreground="?attr/selectableItemBackground"
+            android:clickable="true" android:id="@+id/nameCard">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:gravity="right|center_vertical">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:layout_weight="1" android:gravity="center">
+                <TextView
+                        android:text="이름으로 번호 생성"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView9" android:textSize="24sp"/>
+                <TextView
+                        android:text="이름으로 로또번호를 생성합니다"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView8"
+                        android:layout_marginTop="8dp"/>
+            </LinearLayout>
+            <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="140dp" app:srcCompat="@drawable/name"
+                    android:id="@+id/imageView3" android:paddingTop="16dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
